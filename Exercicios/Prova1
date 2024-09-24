@@ -1,0 +1,110 @@
+//1 - C
+
+//2 - B
+
+//3 - A) #include <stdio.h>
+
+int main(){
+
+    double fahrenheit = 485.0; //usando os 3 ultimos numeros do RA
+    double celsius;
+
+    //conversão de fahrenheit para celsius
+
+    celsius = (fahrenheit - 32.0)*(5.0/9.0);
+
+    //saida
+
+    printf("o valor em celsius é %.21f\n", celsius);
+
+    return 0;
+  }
+
+//3 - B) #include <stdio.h>
+
+int main() {
+  int fahrenheit = 485;
+  float celsius;
+
+  celsius = (fahrenheit - 32) * (5.0 / 9.0);
+  printf("O valor em celsius é: %.2f\n, celsius");
+
+return 0;
+}
+
+//4 - #include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int main ()
+{
+
+   float C;
+
+   cout << ("\nEntre com a temperatura em Celsius:");
+   cin >> C;
+
+
+   if (C<= 0)
+   {
+       printf("\nGeleira - Temperatura muito fria!");
+   }
+   else if ((C>=1)&&(C<=15))
+   {
+    printf("\nFrio - Pode precisar de um casaco!");
+   }
+   else if ((C>=16)&&(C<=25))
+   {
+    printf("\nAgradavel - Tempo bom para sair!");
+   }
+   else if ((C>=26)&&(C<=35))
+   {
+     printf("\nQuente - Ótimo para um dia de praia!");
+   }
+   else if(C>35)
+   {
+      printf("\nMuito quente - Mantenha-se hidratado!");
+   }
+    return 0;
+}
+
+//5 - #include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int main ()
+{
+    float C;
+
+    cout <<("\nEntre com a temperatura atual do deposito:");
+    cin >> C;
+
+    if (C<-10)
+    {
+
+       printf("\nRisco Baixo - Armazenamento ideal para alimentos congelados");
+
+    }
+    else if ((C>=-10)&&(C<=0))
+    {
+
+      printf("\nRisco Moderado - Condicoes aceitaveis para armazenamento refrigerado");
+
+    }
+    else if((C>=1)&&(C<=10)||(C=15))
+    {
+
+     printf("\nRisco Elevado - Monitore a temperatura");
+
+    }
+    else if ((C>10)&&(C !=15))
+    { 
+
+       printf("\nRisco Crítico - Acao Imediata Necessaria!");
+
+    }
+    return 0;
+}
+
